@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lucas Grandjean</title>
+    <link rel="icon" href="{% static 'SiteCV2/Images/engineer.ico' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'SiteCV2/Education.css' %}">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="container-fluid body_section">
+        <header>
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand brand-name" href="#">Lucas Grandjean</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Education/">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Project/">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Contact/">Me contacter</a>
+                    </li>
+                  </ul>
+              </nav>
+          </header>
+    <section>
+        <div class="container">
+            <div class="Heading">
+                <h1>Etudes</h1>
+                <br>
+            </div>
+            <div class="timeline">
+                <div class="timeline-month">
+                    Parcours scolaire
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        2019
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="timeline-box">
+                                <div class="box-title">
+                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>DUT Informatique
+                                    <p class="degree">IUT Fontainebleau-Sénart</p>
+                                </div>
+                                <div class="box-content">
+                                    <div class="box-item">Architecture réseaux et systèmes, algorithmes et programmation, outils et modèles du génie logiciel </div>
+                                    <div class="box-item"><b>Non complété </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        2017
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="timeline-box">
+                                <div class="box-title">
+                                    <i class="fas fa-school" aria-hidden="true"></i> Baccalauréat Economique et Social <p class="degree">Lycée Etienne Bezout</p>
+                                </div>
+                                <div class="box-content">
+                                    <a class="btn btn-sm btn-dark float-right" role="button" href="Certifications/bac.pdf"
+                                       target=_blank style="color: white;">Diplôme</a>
+                                    <div class="box-item">Etude de la macroéconomie et des divers sujets scolaires </div>
+                                    <div class="box-item">Spécialité mathématiques</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=section3>
+        <div class="Heading">
+            <h1>Certifications</h1>
+        </div>
+        <div class="container certificate">
+        <div class="row">
+            <div class="col-md-4">
+                <a target="_blank" href="PIX">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/PIX.png' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">PIX</p>
+                            <p class="certificate-text" style="color:gray">Certification des compétences numériques</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="PSC1">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/PSC1.jpg' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">PSC1</p>
+                            <p class="certificate-text" style="color:gray">Formation secourisme premiers secours</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/TOEIC.jpg' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">TOEIC</p>  
+                            <p class="certificate-text" style="color:gray">Certification du niveau d'anglais</p>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="CNFS">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/CNFS.png' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">CCP1</p>  
+                            <p class="certificate-text" style="color:gray">Responsable d'espace de médiation numérique</p>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="Citoyen">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/ServiceCivique.png' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">Formation civique et citoyenne</p>  
+                            <p class="certificate-text" style="color:gray">La médiation sociale face aux discriminations</p>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/ViolenceConjugale.jpeg' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">Formation violences conjugales</p>  
+                            <p class="certificate-text" style="color:gray">Adopter la bonne posture avec des usagers en situation de violence conjugale</p>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" href="">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            src="{% static 'SiteCV2/Images/OpenClassroom.jpg' %}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text certificate-text">Certifications OpenClassroom</p>  
+                            <p class="certificate-text" style="color:gray">Liste des divers certificats délivrés par OpenClassroom.</p>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class=footer>Fait avec le ❤️ par Lucas Grandjean</footer>
+</body>
+
+</html>

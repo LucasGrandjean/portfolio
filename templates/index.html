@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lucas Grandjean</title>
+  <link rel="icon" href="{% static 'SiteCV2/Images/engineer.ico' %}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'SiteCV2/style.css' %}">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body class="container-fluid body_section">
+        <header>
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand brand-name" href="#">Lucas Grandjean</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Education/">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Project/">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="/Contact/">Me contacter</a>
+                    </li>
+                  </ul>
+              </nav>
+          </header>
+
+          <section id = "Home">
+              <div class="row column1">
+                <div class="col-lg-6 col-md-6 first-image">
+                    <img class = "boyimage" src="{% static 'SiteCV2/Images/20200630_162659.gif' %}" alt="">
+                </div>  
+                  <div class="col-lg-6 section-1">
+                      <h1 class = "Hello">Bienvenue, je suis Lucas ! <span class="wave">👋</span></h1>
+                      <p>Un passionné de numérique avant tout, j'ai décidé de plonger dans le monde du social et du numérique pour partager mon savoir avec les assoiffés de connaissances !</p>
+                          <div class=social_media_icon>
+                            <a class="btn" href="https://www.linkedin.com/in/lucas-grandjean-117b37286/" target=_blank>
+                              <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn" href="TODO" target=_blank>
+                              <i class="fab fa-github"></i>
+                            </a>
+                            <a class="btn" href="mailto:lg.lucasgrandjean@gmail.com" target=_blank>
+                              <i class="fab fa-google"></i>
+                            </a>
+                          </div>
+                  </div>
+                  <div class="Image-boy col-lg-6"><img class="boy" src="{% static 'SiteCV2/Images/Boy-image.png' %}" alt=""></div>
+              </div>
+          </section>
+
+
+          <section id=Whatido>
+            <h1>Qu'est ce que je fais ?</h1>
+              <div class = "row feature-1">
+                  <div class="col-lg-6 col-md-6 Feature-first-image ">
+                    <img class = "Feature-svg-image" src="{% static 'SiteCV2/Images/Data_Analysis.svg' %}" alt="">
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <h1 class= "Feature-Heading" >Développement full stack</h1>
+                    <ul class = "dev-icon">
+                      <li><i class="fab fa-python fa-5x" style="color:#3776ab"></i></li>
+                    </ul>
+                    <div class = "Data-Analytic">
+                      <p class ="Features-paragraph">
+                         💥 Le travail de mon équipe n'a jamais été aussi simplifié depuis l'automatisation des tâches du quotidien. Automatisation des tableaux excels, des prises de rendez-vous, des statistiques et pleins d'autres modèles.</p>
+                      <p  class ="Features-paragraph">
+                         💥 Une expérience de plusieurs années dans le Python avec des librairies telles que Numpy, Panda, Selenium, BS4, Openpyxl et pleins d'autres.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="row feature-2">
+                <div class="col-lg-6 col-md-6 feature-web">
+                  <h1 class="Feature-Heading">Développement Web</h1>
+                  <ul class = "dev-icon">
+                    <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
+                    <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
+                    <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
+                    <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
+                    <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
+                    <li><i class="fab fa-node fa-5x" style="color:#679e63"></i></li>
+                    <li><i class="fab fa-figma fa-5x" style="color:#f24e1e"></i></li>
+                
+                  </ul>
+                  <div class = "Data-Analytic">
+                    <p class ="Features-paragraph">
+                       💥 Conception de sites dynamiques à l'aide de HTML, CSS, Bootstrap et Javascript.</p>
+                    <p  class ="Features-paragraph">
+                       💥 Expérience back-end prononcée avec Django, Flask, PHP et des bases de données SQL.</p>
+                      <p  class ="Features-paragraph">
+                       💥 Design graphique des éléments à l'aide de Photoshop et Canva.</p>
+                      </div>
+                </div>
+                <div class="col-lg-6 col-md-6 Feature-second-image ">
+                  <img class = "Feature-svg-image" src="{% static 'SiteCV2/Images/website.svg' %}" alt="">
+                </div>
+              </div>
+              <div class="row feature-3">
+                <div class = "col-lg-6 col-md-6 Feature-third-image">
+                    <img class = "Feature-svg-image-3" src="{% static 'SiteCV2/Images/Coding.svg' %}" alt="">
+                  </div>
+                  <div class="col-lg-6 col-md-6 feature-coding">
+                    <h1 class="Feature-Heading">Ateliers numériques</h1>
+                    <ul class = "dev-icon">
+                     <li></li>
+                     <li><i class="fas fa-laptop-code fa-4x"></i></li>
+                     
+                     <li><i class="fas fa-file-code fa-4x" style="color: #a8afcb;"></i></li>
+                    </ul>
+                    <div class = "Data-Analytic">
+                      <p class ="Features-paragraph">
+                         💥 Mise en place de forums et d'ateliers sur le thème du numérique pour apprendre la bureautique et bien plus encore.</p>
+                      <p  class ="Features-paragraph">
+                         💥 Création de nombreux supports visuels et d'exercices ludiques et interractifs pour faciliter l'accès à l'autonomie.</p>
+                      <p  class ="Features-paragraph">
+                         💥 Formation au numérique et au rôle d'assistant pédagogique pour des employés de différentes fonctions.</p>
+                        </div>
+                  </div>
+              </div>
+               
+        
+          </section>
+    <footer class=footer>Fait avec le ❤️ par Lucas Grandjean</footer>
+</body>
+</html>
